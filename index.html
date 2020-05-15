@@ -11,9 +11,10 @@
 
 <body>
     
-    <header id="sobre">
+    <header>
         <nav class="menu">
-            <ul>
+            <ul class="container">
+                <li><a href="#"><i class="fas fa-home"></i>  Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#portfolio">Portifólio</a></li>
                 <li><a href="#contato">Contato</a></li>             
@@ -27,36 +28,61 @@
 
     </header>
 
+    <section class="sobre container" id="sobre">
 
-    <section class="portfolio" id="portfolio">
+      <h2>Sobre</h2>
 
-        <h2>Projetos</h2>
+      <figure class="avatar">
+        <img src="https://avatars3.githubusercontent.com/u/59984220?s=460&u=a5646b3d94de2d5de8ca4aa2d622a8667dab4ec0&v=4" alt="Yuri Alves">
+      </figure>
 
-        <div class="grid">
-          <figure>
-            <img class="img-portfolio" src="./img/1.png" alt="eCommerce">
-            <figcaption>eCommerce</figcaption>
-          </figure>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum reprehenderit pariatur, quasi vero necessitatibus nihil, quam sed praesentium sunt unde at architecto totam veritatis velit quia. Dolorem inventore corporis placeat.
+      </p>
 
-          <figure>
-            <img class="img-portfolio" src="./img/2.gif" alt=">Mobile">
-            <figcaption>Mobile</figcaption>
-          </figure>
+      <p>
+        Nisi ipsa facilis velit porro magni necessitatibus obcaecati magnam voluptate, accusantium vero ad molestiae. Suscipit earum voluptates officia quod nostrum magni ullam nihil consequuntur, nulla obcaecati explicabo corporis eveniet nobis?
+      </p>
 
-          <figure>
-            <img class="img-portfolio" src="./img/3.jpg" alt="Web design">
-            <figcaption>Web design</figcaption>
-          </figure>
-
-          <figure>
-            <img class="img-portfolio" src="./img/4.jpg" alt="Projetos pessoais">
-            <figcaption>Projetos pessoais</figcaption>
-          </figure>
-        </div>
+      <p>
+        Obcaecati minima nisi incidunt quia unde sint, autem quis corporis eius quibusdam quidem nostrum neque excepturi cum et distinctio voluptatem non omnis eos enim dolorum dignissimos voluptatum magni! Numquam, voluptatem?
+      </p>
+      
+      <p>
+        Site desenvolvido durante a <a target="blank" href="https://alura.com.br/imersao-css">Imersão CSS da Alura</a>! 🦊
+      </p>
 
     </section>
 
-    <section class="contato" id="contato">
+    <section class="portfolio container" id="portfolio">
+
+      <h2>Projetos</h2>
+
+      <div class="grid">
+        <figure>
+          <img class="img-portfolio" src="./img/1.png" alt="eCommerce">
+          <figcaption>eCommerce</figcaption>
+        </figure>
+
+        <figure>
+          <img class="img-portfolio" src="./img/2.gif" alt=">Mobile">
+          <figcaption>Mobile</figcaption>
+        </figure>
+
+        <figure>
+          <img class="img-portfolio" src="./img/3.jpg" alt="Web design">
+          <figcaption>Web design</figcaption>
+        </figure>
+
+        <figure>
+          <img class="img-portfolio" src="./img/4.jpg" alt="Projetos pessoais">
+          <figcaption>Projetos pessoais</figcaption>
+        </figure>
+      </div>
+
+    </section>
+
+    <section class="contato container" id="contato">
       <h2>Contato</h2>
 
       <div class="grid icons">
@@ -73,13 +99,18 @@
           <i class="fab fa-linkedin"></i>
         </a>
 
-        <a target="_blank" href="https://instagram.com/yuripa_07">
+        <a target="_blank" href="https://instagram.com/yuripa07">
           <i class="fab fa-instagram"></i>
         </a>
 
       </div>
     </section>
 
-</body>
+    <footer>
+    
+      
+    </footer>
+   
+  </body>
 
 </html>

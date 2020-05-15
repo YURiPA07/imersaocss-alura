@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /* background-image: url("fundo.gif");
     background-size: auto 100vh; */
@@ -52,6 +56,7 @@ header {
     width: 100vw;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .menu ul {
@@ -81,18 +86,24 @@ a {
     text-decoration: none;
 }
 
-/* a:hover {
-    text-decoration: underline;
-} */
+.titulo {
+    transform: scale(0.1) translateY(-5vh);
+    opacity: 0;
 
+    animation: animacaoTitulo 500ms linear forwards;
+}
+
+@keyframes animacaoTitulo {
+    to {
+        transform: scale(1) translateY(0);
+        opacity: 1; 
+    }
+}
 
 .site-subtitle,
 .site-title {
     color: whitesmoke;
     text-align: center;
-    /* padding: 32px; */
-    font-family: 'Shadows Into Light', cursive;
-    letter-spacing: 6px;
 }
 
 .site-title {
@@ -101,8 +112,9 @@ a {
 }
 
 .site-subtitle {
+    font-family: 'Shadows Into Light', cursive;
     font-style: italic;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     line-height: 1.5em;
 }
 
@@ -149,6 +161,11 @@ a {
     width: 240px;
     height: 180px;
     object-fit: cover;
+    transition: transform 300ms;
+}
+
+.img-portfolio:hover {
+    transform: scale(1.05);
 }
 
 .contato {

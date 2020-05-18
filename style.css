@@ -19,6 +19,17 @@ body {
     background-image: url(img/fundo.jpg);
     background-attachment: fixed;
     background-size: 100%;
+    /* position: relative; */
+}
+
+.botao {
+    background-color: magenta;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    right: 1em;
+    bottom: 1em;
 }
 
 @media (min-width: 400px) {
@@ -203,12 +214,54 @@ a {
     width: 240px;
     height: 180px;
     object-fit: cover;
-    transition: transform 300ms;
+    /* transition: transform 300ms; */
 }
 
-.img-portfolio:hover {
+/* .img-portfolio:hover {
     transform: scale(1.05);
-}
+} */
+
+/* .flip-card {
+    background-color: purple;
+    perspective: 500px;
+} */
+
+ /* .card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+} */
+
+/* .flip-card:hover {
+    transform: rotateY(180deg);
+} */
+
+/* .card-front,
+.card-back {
+    backface-visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+} */
+
+
+
+/* .card-back {
+    backface-visibility: hidden;
+    background-color: white;
+    height: 180px;
+    width: 100%;
+    transform: rotateY(180deg);
+
+} */
+
+/* .card-back {
+    background-color: white;
+    height: 180px;
+    width: 240px;
+    position: absolute;
+
+} */
 
 .contato {
     background-color: #292828;
@@ -218,7 +271,43 @@ a {
 
 .contato .icons {
     text-align: center;
+    background-color:rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 150px;
+
 }
+
+.icons i {
+    margin-top: 3vh;
+}
+
+@media (min-width: 600px) {
+    .contato .icons {
+    display: inherit;
+    }
+
+    .icons i {
+        margin-top: 65px;
+    }
+
+    
+}
+
+@media (min-width: 800px) {
+    .icons i {
+        margin-top: 60px;
+    }
+
+    .grid.icons {
+        width: 60vw;
+        margin: 20vh auto;
+    }
+}
+
+
 
 .contato a:active,
 .contato a {

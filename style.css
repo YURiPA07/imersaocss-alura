@@ -272,7 +272,6 @@ a {
 
 .card-back span {
     color: black;
-    /* text-shadow: rgb(255, 255, 255) 0px 0px 10px 2px; */
     display: block;
     margin-top: 12px;
     transition: color 200ms;

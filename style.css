@@ -6,6 +6,12 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 :root {
@@ -13,17 +19,14 @@ html {
 }
 
 body {
-    /* background-image: url("fundo.gif");
-    background-size: auto 100vh; */
+    background-repeat: no-repeat;
     background-color: #292828;
-    font-family: Arial, sans-serif;
     height: 100vh;
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
     background-image: url(img/fundo.jpg);
     background-attachment: fixed;
     background-size: 100%;
-    /* position: relative; */
 }
 
 .botao {
@@ -189,128 +192,81 @@ a {
     text-align: justify;
 }
 
+/***** PROJETOS *****/
 .projetos {
-    background-color: #141414;
+    min-height: 100vh;
+    max-width: 1200px;
+    background: #141414;
+    margin: 0 auto;
 }
 
-.projetos .grid {
-    display: grid;
-    gap: 2em;
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-@media (min-width: 560px) {
-    .projetos .grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (min-width: 880px) {
-    .projetos .grid {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-.projetos figure {
-    text-align: center;
+.flex div {
+    flex: 1 1 300px;
+    margin: 10px;
 }
 
 .card-content {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.img-projetos {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    /* transition: transform 300ms; */
-}
-
-
-/* .card-back::after {
-    content: "";
-    width: 100%;
-    height: 0;
-    background-color: deeppink;
+.flex div .card-back {
     position: absolute;
-    left: 0;
-    top: 0;
-    text-align: center;
-}
-
-.card-back:hover::after {
-    height: 100%;
-    transition: height 400ms ease-in-out;
-} */
-
-.card-back {
-    position: absolute;
+    margin: 0px;
     top: 0;
     left: 0;
     background-color: var(--primary-color);
-    height: 200px;
+    height: 100%;
     width: 100%;
     opacity: 0;
-}
-
+} 
 
 .card-back p {
-    padding: 24px 12px;
-    justify-content: center;
-    text-align: center;
     color: white;
-    font-size: 18px;
-    box-sizing: initial;
-}
-
-@media (min-width: 600px) {
-    .card-back p {
-        /* padding: 24px 12px; */
-        text-align: center;
-        color: white;
-    }  
+    padding: 20px 20px;
+    text-align: center;
 }
 
 .card-back span {
-    color: black;
     display: block;
-    margin-top: 12px;
-    transition: color 200ms;
+    color: black;
+    padding: 0 20px;
     text-align: center;
 }
 
-figcaption a {
-    color: white;
-    display: block;
-    font-size: 18px;
-    text-decoration: underline;
-    text-decoration-color: var(--primary-color);
-    
+.flex div .card-back:hover {
+    opacity: 0.9;
+    transition: opacity 300ms ease-in-out;
 }
 
-figcaption a:hover {
-    border-bottom: none;
-    color: var(--primary-color);
+.card p {
+    text-align: center;
+}
+
+.card a {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+}
+
+.card a:hover {
     text-decoration: none;
+    color: var(--primary-color);
     transition: 300ms;
 }
 
 
-.card-back:hover {
-    opacity: 0.9;
-    height: 200px;
-    transition: opacity 300ms ease-in-out;
-}
-
-.card figcaption {
-    color: white;
-    text-align: center;
-    margin-top: 12px;
-}
-
-
+/***** CONTATO *****/
 .contato {
     background-color: #292828;
-    height: 90vh;
+    min-height: 90vh;
     padding: 2em;
 }
 
